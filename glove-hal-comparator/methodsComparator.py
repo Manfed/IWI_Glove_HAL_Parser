@@ -15,7 +15,7 @@ def compare(hal_file, glove_file, output_file):
                 hal = hal_vector[key]
                 glove = glove_vector[key]
                 length = min(len(hal), len(glove))
-                file_content = u"%s\nhal\tdiff\tglove"
+                file_content = u"\nhal\tdiff\tglove"
                 for i in range(0, length):
                     position = __check_position__(hal[i], glove)
                     if position != -1:
